@@ -1,17 +1,18 @@
+
 <?php
 
 class Conexion {
 
-    private static $host = 'sql.freedb.tech';
-    private static $dbName = 'freedb_qw6SHRHX';
-    private static $username = 'u_Cu3N0H';
-    private static $password = 'OQNdraNSk0Xf';
+    private static $host = 'sql301.infinityfree.com';
+    private static $dbName = 'if0_42366111_dayamel';
+    private static $username = 'if0_42366111';
+    private static $password = 'FNCW8PhvXqHWE';
 
     public static function conectar() {
 
         try {
 
-            $dsn = "mysql:host=" . self::$host . ";port=3306;dbname=" . self::$dbName . ";charset=utf8mb4";
+            $dsn = "mysql:host=" . self::$host . ";dbname=" . self::$dbName . ";charset=utf8mb4";
 
             $pdo = new PDO($dsn, self::$username, self::$password);
 
@@ -27,5 +28,3 @@ class Conexion {
 
     }
 }
-
-         
